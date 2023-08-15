@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02987557c49c0504597cf385461575b8, type: 3}
+  m_Name: wheel game list
+  m_EditorClassIdentifier: 
+  _items:
+  - {fileID: 11400000, guid: 635fa3e47c6cb3c438b4aa8e6f9b8ce2, type: 2}
+  - {fileID: 11400000, guid: 838b27ca47cc84242ad0a5a1fe9a410d, type: 2}
+  - {fileID: 11400000, guid: f6eb149dac695d74c8bf7edf26b7aef9, type: 2}
+  - {fileID: 11400000, guid: 7eabfeae8c4dc1440875e655e053b66f, type: 2}
+  - {fileID: 11400000, guid: 4ee44cda553921d469d0ac8c8989db1a, type: 2}
+  - {fileID: 11400000, guid: ecc9b6d21920b2b44976f4bdd6320ae1, type: 2}
