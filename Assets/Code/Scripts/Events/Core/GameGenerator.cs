@@ -9,6 +9,7 @@ namespace Minigames
         protected IResult[] _items;
 
         public ItemList List => _list;
+        public IResult[] Results => _items;
         public virtual int Length => 0;
         public virtual float Delay => 0;
 

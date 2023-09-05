@@ -304,9 +304,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _list: {fileID: 11400000, guid: 5e72f9b9de1477f499e2946755b6617c, type: 2}
   _random: 0
-  _distance: 2.7
+  _distance: 2.67
   _colors:
-  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0.3537736, b: 0.3537736, a: 1}
   - {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 1}
   _icons:
   - {fileID: 1794491592}
@@ -540,7 +540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7932614067631288794, guid: 76e70927275f303468a64320bd9c6b63, type: 3}
       propertyPath: m_PresetInfoIsWorld
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -1024,11 +1024,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6547220188062239169, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 135
+      value: 133.5
       objectReference: {fileID: 0}
     - target: {fileID: 6547220188062239169, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 233.82687
+      value: 231.22879
       objectReference: {fileID: 0}
     - target: {fileID: 8250315198723337002, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_Pivot.x
@@ -1559,11 +1559,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6547220188062239169, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 135.00005
+      value: 133.50005
       objectReference: {fileID: 0}
     - target: {fileID: 6547220188062239169, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 233.8269
+      value: 231.22882
       objectReference: {fileID: 0}
     - target: {fileID: 8250315198723337002, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_Pivot.x
@@ -1809,11 +1809,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6547220188062239169, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 135.00002
+      value: 133.50002
       objectReference: {fileID: 0}
     - target: {fileID: 6547220188062239169, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 233.82692
+      value: 231.22884
       objectReference: {fileID: 0}
     - target: {fileID: 8250315198723337002, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_Pivot.x
@@ -1966,11 +1966,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6547220188062239169, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 135.00002
+      value: 133.50002
       objectReference: {fileID: 0}
     - target: {fileID: 6547220188062239169, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 233.82686
+      value: 231.22878
       objectReference: {fileID: 0}
     - target: {fileID: 6547220188062239169, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2138,11 +2138,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6547220188062239169, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 135.00009
+      value: 133.50009
       objectReference: {fileID: 0}
     - target: {fileID: 6547220188062239169, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 233.8269
+      value: 231.22882
       objectReference: {fileID: 0}
     - target: {fileID: 8250315198723337002, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_Pivot.x
@@ -7370,11 +7370,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6547220188062239169, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 135.00003
+      value: 133.50003
       objectReference: {fileID: 0}
     - target: {fileID: 6547220188062239169, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 233.82684
+      value: 231.22876
       objectReference: {fileID: 0}
     - target: {fileID: 8250315198723337002, guid: 18a7ccd4a3460134dbc91f82be897fcd, type: 3}
       propertyPath: m_Pivot.x

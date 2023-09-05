@@ -8,7 +8,7 @@ namespace Minigames.LuckyWheel
         [SerializeField, Range(0, 5)] private float _distance;
         [SerializeField] private Color[] _colors = new Color[2];
 
-        [SerializeField] private Peace[] _icons;
+        [SerializeField] private Piece[] _icons;
 
         [ContextMenu("Setup Icons")]
         private void Start()

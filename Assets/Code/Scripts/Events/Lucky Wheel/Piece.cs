@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 namespace Minigames.LuckyWheel
 {
-    public class Peace : MonoBehaviour, IResult
+    public class Piece : MonoBehaviour, IResult
     {
         [SerializeField] private RectTransform _icon;
         
