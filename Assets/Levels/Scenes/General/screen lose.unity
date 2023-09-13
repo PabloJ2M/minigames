@@ -532,7 +532,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Sigue
 
-    intentado'
+    intentando'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1893f81fb871965419fdfd54b6ff3722, type: 2}
   m_sharedMaterial: {fileID: 1277430599659124044, guid: 1893f81fb871965419fdfd54b6ff3722, type: 2}
