@@ -32,7 +32,7 @@ namespace Minigames.Memory
 
             //analize grid
             if (isAllEqual) { _complete++; print("same"); }
-            if (_complete >= _generator.List.Length) _onComplete.Invoke();
+            if (_complete * 2 >= _generator.Results.Length) _onComplete.Invoke();
         }
     }
 }
