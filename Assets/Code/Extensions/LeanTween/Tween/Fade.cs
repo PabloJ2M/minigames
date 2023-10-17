@@ -17,7 +17,7 @@ namespace Effects
             _target = forward ? 1 : 0;
             if (_alpha == _target) return;
 
-            CancelTween();
+            base.Animation(forward);
 
             LTDescr tween = LeanTween.value(gameObject, _alpha, _target, _time);
             if (_ignoreTimeScale) tween.setIgnoreTimeScale(true);
@@ -39,6 +39,5 @@ namespace Effects
 
         public void FadeIn() => Animation(true);
         public void FadeOut() => Animation(false);
-        public void CancelTween() { if (_tweenID >= 0) LeanTween.cancel(_tweenID); }
     }
 }

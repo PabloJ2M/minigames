@@ -1,19 +1,28 @@
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Timer : ATimer
+public class Timer : MonoBehaviour
 {
-    [SerializeField] private UnityEvent<string> _onChangeValue;
+    [SerializeField] protected float _time;
+    [SerializeField] private bool _complete;
+    [SerializeField] private UnityEvent<string> _onValueChange;
+    [SerializeField] private UnityEvent _onComplete;
 
-    private void Start() => StringFormatter();
-    protected override void Update() { base.Update(); StringFormatter(); }
+    protected float _current;
 
-    private void StringFormatter()
+    private void Awake() => _current = _time;
+    protected virtual void Update()
     {
-        int minutos = (int)_current / 60;
-        int segundos = (int)_current % 60;
+        if (_complete) return;
+        if (_current > 0) RemoveTime(Time.deltaTime);
+        if (_current <= 0) { _complete = true; _onComplete.Invoke(); }
 
-        string format = "{0:00}:{1:00}";
-        _onChangeValue.Invoke(string.Format(format, minutos, segundos));
+        _onValueChange.Invoke(Format());
     }
+
+    protected virtual string Format() => _current < 0.5f ? string.Empty : Mathf.RoundToInt(_current).ToString();
+    public void AddTime(float amount) => _current = math.clamp(_current += amount, 0, _time);
+    public void RemoveTime(float amount) => _current = math.clamp(_current -= amount, 0, _time);
+    public void ResetValues() { _current = _time; _complete = false; }
 }

@@ -13,6 +13,7 @@ namespace Effects
 
         public override void Animation(bool forward)
         {
+            base.Animation(forward);
             Vector3 direction = (forward ? _angle : 0) * _axis;
 
             LeanTween.rotate(gameObject, direction, _time).setEase(_curve);

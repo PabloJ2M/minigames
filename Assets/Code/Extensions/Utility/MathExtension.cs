@@ -16,6 +16,7 @@ namespace UnityEngine
         public static readonly float3 forward = new(0, 0, 1);
         public static readonly float3 back = new(0, 0, -1);
 
+        public static readonly float3 one = new(1, 1, 1);
         public static readonly float3 none = new(float.MaxValue, float.MaxValue, float.MaxValue);
         public static bool Compare(float3 a, float3 b) => a.x == b.x && a.y == b.y && a.z == b.z;
     }

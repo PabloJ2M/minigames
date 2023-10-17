@@ -1,16 +1,13 @@
 using UnityEngine;
+using Effects;
 
-public class Loading : MonoBehaviour
+public class Loading : Rotate
 {
-    [SerializeField] private GameObject _self;
-    [SerializeField] private Transform _icon;
+    [SerializeField] private GameObject _container;
 
-    public void OnLoading(bool value) => _self.SetActive(value);
-
-    private void Awake() => OnLoading(false);
-    private void FixedUpdate()
+    public override void Animation(bool value)
     {
-        if (!_self.activeSelf) return;
-        _icon.Rotate(Vector3.back, 2);
+        _container.SetActive(value);
+        base.Animation(value);
     }
 }

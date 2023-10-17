@@ -19,7 +19,11 @@ namespace Minigames.Survey
             print($"<color=yellow>items left { left.Count }</color>");
 
             //add elements to list
-            for (int i = 0; i < size; i++) _listOfQuestions.Enqueue(left[i]);
+            for (int i = 0; i < size; i++)
+            {
+                _listOfQuestions.Enqueue(left[i]);
+                _constant.Add(left[i]);
+            }
         }
     }
 }

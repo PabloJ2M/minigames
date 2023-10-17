@@ -43,8 +43,11 @@ namespace Minigames.Survey
             yield return _waitForDelay;
 
             //complete statement
-            if (_failLimit != 0 && _failCount >= _failLimit) { _onFailure.Invoke(); yield break; }
-            if (_listOfQuestions.Count == 0) { _onComplete.Invoke(); yield break; }
+            if (_listOfQuestions.Count == 0)
+            {
+                if (_failLimit != 0 && _failCount >= _failLimit) { _onFailure.Invoke(); yield break; }
+                _onComplete.Invoke(); yield break;
+            }
 
             //next step
             manager.Break();

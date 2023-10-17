@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -20,7 +21,7 @@ public class WebCamRenderer : MonoBehaviour
         _onUpdateRender.Invoke(_texture);
         _webcamTexture.Play();
     }
-    private System.Collections.IEnumerator Start()
+    private IEnumerator Start()
     {
         yield return _enable;
 

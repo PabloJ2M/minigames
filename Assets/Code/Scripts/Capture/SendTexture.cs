@@ -17,7 +17,7 @@ public class SendTexture : MonoBehaviour
     {
         if (string.IsNullOrWhiteSpace(email.Trim())) yield break;
 
-        _loading.OnLoading(true);
+        _loading.Animation(true);
 
         string url = "https://unityfeature.000webhostapp.com/send_image_to_email.php";
         byte[] bytes = ImagePreview.texture.EncodeToPNG();
@@ -31,7 +31,7 @@ public class SendTexture : MonoBehaviour
 
         UnityWebRequest www = UnityWebRequest.Post(url, form);
         yield return www.SendWebRequest();
-        _loading.OnLoading(false);
+        _loading.Animation(false);
 
         if (www.result != UnityWebRequest.Result.Success)
         {

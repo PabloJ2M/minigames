@@ -10,7 +10,7 @@ namespace Effects
         [SerializeField] private float _distance;
         private Vector3 _origin, _current;
 
-        private void Awake() => _current = _origin = transform.position;
+        protected override void Awake() => _current = _origin = transform.position;
         private void OnDrawGizmos() => Gizmos.DrawLine(_current, _current + _distance * _direction);
 
         public void ResetPosition() => transform.position = _origin;
