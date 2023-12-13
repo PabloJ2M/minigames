@@ -25,4 +25,5 @@ public class Timer : MonoBehaviour
     public void AddTime(float amount) => _current = math.clamp(_current += amount, 0, _time);
     public void RemoveTime(float amount) => _current = math.clamp(_current -= amount, 0, _time);
     public void ResetValues() { _current = _time; _complete = false; }
+    public void Complete() => _complete = true;
 }

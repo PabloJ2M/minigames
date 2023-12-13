@@ -20,7 +20,6 @@ public class EmailSender : MonoBehaviour
 
     private void Start()
     {
-        print("settings configurated");
         EmailService.Instance.Initialize(new()
         {
             SmtpHost = "smtp.gmail.com",

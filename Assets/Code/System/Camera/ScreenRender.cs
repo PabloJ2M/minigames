@@ -29,6 +29,7 @@ public class ScreenRender : MonoBehaviour
 
         string path = Application.streamingAssetsPath + _path;
         byte[] bytes = texture.EncodeToJPG();
+        yield return _frame;
 
         File.WriteAllBytes(path, bytes);
         RenderTexture.active = _camera.targetTexture = null;

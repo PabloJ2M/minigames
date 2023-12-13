@@ -6,18 +6,17 @@ namespace Minigames.LuckyWheel
 {
     public class Piece : MonoBehaviour, IResult
     {
+        [SerializeField] private Image _background, _iconImage;
         [SerializeField] private RectTransform _icon;
-        
-        [HideInInspector, SerializeField]
-        private Image _background, _iconImage;
 
         public Sprite Image { set => _iconImage.sprite = value; }
         public int ID { get; set; }
 
         private void Reset()
         {
-            _background = GetComponent<Image>();
+            _icon = transform.GetChild(0) as RectTransform;
             _iconImage = _icon.GetComponent<Image>();
+            _background = GetComponent<Image>();
         }
 
         public void Trigger(BaseEventData eventData) { }

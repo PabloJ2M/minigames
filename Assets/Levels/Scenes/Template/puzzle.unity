@@ -402,6 +402,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _time: 0.5
+  _playOnAwake: 0
   _loop: 0
   _ignoreTimeScale: 0
   _affectRaycast: 0
@@ -724,6 +725,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 393446559}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 16898397}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
@@ -1676,28 +1689,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _time: 75
-  _loseCondition:
+  _complete: 0
+  _onValueChange:
+    m_PersistentCalls:
+      m_Calls: []
+  _onComplete:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 393446560}
         m_TargetAssemblyTypeName: UnityEngine.SceneManagement.SceneLoader, Assembly-CSharp
         m_MethodName: SwipeScene
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onChangeValue:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 589412049}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: set_text
-        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
