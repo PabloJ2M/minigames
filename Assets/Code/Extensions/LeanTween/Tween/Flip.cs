@@ -17,7 +17,9 @@ namespace Effects
             Vector3 direction = (forward ? _angle : 0) * _axis;
 
             LeanTween.rotate(gameObject, direction, _time).setEase(_curve);
-            LeanTween.value(gameObject, 0, 1, _time).setEase(_curve).setOnUpdate(onUpdate);
+            LTDescr tween = LeanTween.value(gameObject, 0, 1, _time).setEase(_curve).setOnUpdate(onUpdate);
+
+            _tweenID = tween.uniqueId;
 
             void onUpdate(float value) => _onValueChange?.Invoke(forward ? value : 1 - value);
         }

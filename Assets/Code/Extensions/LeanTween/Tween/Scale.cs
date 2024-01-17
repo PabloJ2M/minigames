@@ -9,14 +9,12 @@ namespace Effects
 
         public override void Animation(bool forward)
         {
-            LTDescr tween = LeanTween.scale(gameObject, _factor * mathf.one, _time);
+            base.Animation(forward);
+
+            LTDescr tween = LeanTween.scale(gameObject, forward ? _factor * mathf.one : mathf.one, _time);
             if (_loop) tween.setLoopPingPong(-1);
             tween.setEase(_curve);
-        }
-        public override void CancelTween()
-        {
-            base.CancelTween();
-            transform.localScale = mathf.one;
+            _tweenID = tween.uniqueId;
         }
     }
 }

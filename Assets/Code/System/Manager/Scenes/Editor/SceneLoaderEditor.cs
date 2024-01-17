@@ -17,6 +17,8 @@ namespace UnityEngine.SceneManagement
             //Apply path to string variable
             if (EditorGUI.EndChangeCheck()) loader.ScenePath = AssetDatabase.GetAssetPath(newScene);
             serializedObject.ApplyModifiedProperties();
+
+            Undo.RecordObject(loader, "change scene in loader");
         }
     }
 }
